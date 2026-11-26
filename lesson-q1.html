@@ -1,0 +1,50 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>الدرس Q1 (الكميات): حصر كمرة بسيطة، مثال توضيحي | الأكاديمية السعودية للهندسة والإنشاءات</title>
+<style>
+:root{--navy:#10294a;--ink:#1d2733;--bg:#f6f7f9;--card:#fff;--line:#dde2e9;--accent:#c9731a;--muted:#5b6673}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic","Noto Sans Arabic",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;font-size:17px}
+header{background:var(--navy);color:#fff;padding:14px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header a.brand{color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem}
+header .en{font-size:.8rem;opacity:.75;direction:ltr}
+nav.top{display:flex;gap:6px;flex-wrap:wrap;margin-inline-start:auto}
+nav.top a{color:#dfe8f5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:.9rem}
+nav.top a:hover,nav.top a.on{background:rgba(255,255,255,.14);color:#fff}
+main{max-width:920px;margin:0 auto;padding:22px 16px 60px}
+.banner{background:#fff4e5;border:1px solid #f0c78a;color:#6b3e07;border-radius:10px;padding:10px 14px;font-size:.92rem;margin-bottom:18px}
+h1{color:var(--navy);font-size:1.7rem;line-height:1.5}h2{color:var(--navy);margin-top:2rem;border-bottom:2px solid var(--line);padding-bottom:4px}h3{color:#27456f}
+.tw{overflow-x:auto;margin:14px 0}table{border-collapse:collapse;width:100%;background:var(--card);font-size:.93rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:start;vertical-align:top}th{background:#eaf0f8}
+code{background:#eef1f5;padding:1px 5px;border-radius:4px;direction:ltr;unicode-bidi:embed;font-size:.88em}
+pre{background:#14202e;color:#e8eef5;padding:14px;border-radius:10px;overflow-x:auto;font-size:.82rem;line-height:1.5;text-align:left}
+pre code{background:none;color:inherit;padding:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:14px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:inherit;display:block}
+.card:hover{border-color:var(--accent)}.card b{color:var(--navy)}.card span{display:block;color:var(--muted);font-size:.85rem}
+.badge{display:inline-block;font-size:.75rem;padding:1px 8px;border-radius:99px;background:#e9edf3;color:#334}
+.b-draft{background:#ffe9c9;color:#7a4300}.b-ok{background:#d9f2e0;color:#14532d}.b-un{background:#fde0e0;color:#7f1d1d}
+input{width:100%;font:inherit;padding:2px 4px;border:1px solid var(--line);border-radius:6px;direction:ltr}
+label.f{display:flex;flex-direction:column;gap:2px;min-width:9em;flex:1 1 9em}label.f span{font-size:.8rem;color:var(--muted);line-height:1.4}.fg{display:flex;flex-wrap:wrap;gap:10px}.out{margin-top:8px;font-weight:700;color:var(--navy)}.out.err{color:#9b1c1c}.warn{background:#fff4e5;border:1px solid #f0c78a;border-radius:10px;padding:10px 14px;font-size:.92rem;margin:10px 0}select{font:inherit;padding:3px;border:1px solid var(--line);border-radius:6px;max-width:100%}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:24px}
+@media (max-width:600px){.calc table,.calc tbody,.calc tr,.calc th,.calc td{display:block;width:100%}.calc th{border-bottom:0}label.f{flex:1 1 100%}body{font-size:16px}nav.top{margin-inline-start:0}}
+</style></head><body><header><a class="brand" href="index.html">الأكاديمية السعودية للهندسة والإنشاءات<div class="en">Saudi Engineering Academy</div></a>
+<nav class="top"><a href="docs.html">الوثائق</a><a href="sources.html">سجل المصادر</a><a href="calc.html">الحاسبة</a><a href="status.html">الحالة</a></nav></header><main>
+<div class="banner">مسودة تأسيسية قيد الإعداد. المحتوى لم يخضع بعد لمراجعة هندسية مستقلة، وليس اعتمادًا مهنيًا ولا ترخيصًا. لا تُستخدم أي قيمة هنا كمرجع تصميم أو تنفيذ.</div>
+<h1>الدرس Q1 (الكميات): طريقة حصر كمرة بسيطة، مثال توضيحي</h1>
+<ul><li>نوع الدرس: حساب هندسي أولي (هندسة وجبر)، بمدخلات مفترضة للتدريب. <strong>هذه ليست كميات مشروع حقيقي</strong>، ولا تُستعمل في تسعير أو توريد أو تنفيذ.</li><li>مصادر: لا يعتمد الحساب على نص نظامي أو كودي. كل رقم أدناه ناتج عن مدخلات المثال بعمليات حسابية يمكن إعادتها يدويا، وقد طابقناها مع الحاسبة التعليمية في هذا الموقع (23 اختبارا تمر).</li><li>مرجع واحد على اختلاف الاصطلاحات: محاضرة جامعية في حصر تسليح الكمرات (SRC-060). نقلنا منها فقط أنها تعد الكانات بصيغة "الطول ÷ التباعد + 1". هي محاضرة مرتبطة بكود دولة أخرى وبأشكال تسليح خاصة بها، فلا نعتمد منها شيئا آخر.</li><li>تاريخ الإعداد: 26 نوفمبر 2026.</li></ul>
+<h2>المثال (مدخلات مفترضة)</h2>
+<p>كمرة مستطيلة: الطول 6 م، العرض 0.30 م، العمق 0.60 م. حديد دائري عادي قطر 12 مم بطول كلي 100 م. كانات: تباعد 0.20 م على الطول كله، والغطاء إلى الوجه الخارجي للكانة 0.04 م، وإضافة الخطافين 0.20 م (مُدخَل مفترض).</p>
+<h2>1. حجم الخرسانة</h2>
+<p>الحجم = الطول × العرض × العمق = 6 × 0.30 × 0.60 = 1.08 م³. هذا حجم هندسي خام: لا خصم لتقاطع الكمرة مع الأعمدة أو البلاطة، ولا زيادة هدر.</p>
+<h2>2. وزن الحديد</h2>
+<ul><li>الوزن لكل متر = مساحة المقطع × الكثافة. المساحة = π × (0.012)² ÷ 4، والكثافة المرجعية 7850 كجم/م³.</li><li>الناتج نحو 0.8878 كجم/م، فوزن 100 م = 88.78 كجم.</li><li>الكثافة قيمة مرجعية فقط. تُؤكد من مواصفات المشروع، ولا نعتبر الناتج وزنا معتمدا للتوريد.</li></ul>
+<h2>3. عدد الكانات: الاصطلاح يغير الجواب</h2>
+<ul><li>أول كانة عند البداية والعد بصيغة "الطول ÷ التباعد + 1": 6 ÷ 0.20 + 1 = 31.</li><li>بلا كانة على خط البداية: 30.</li><li>فرق كانة واحدة من الاصطلاح وحده. الاصطلاح الصحيح يحدده المخطط أو المواصفة، لا الحاسبة. وقد يختلف التباعد على طول الكمرة في مخطط حقيقي، فيؤخذ من المخطط لا من افتراض المثال.</li></ul>
+<h2>4. طول كانة تخطيطي</h2>
+<ul><li>العرض الداخلي = 0.30 − 2 × 0.04 = 0.22 م، والعمق الداخلي = 0.60 − 2 × 0.04 = 0.52 م.</li><li>المحيط = 2 × (0.22 + 0.52) = 1.48 م، ثم نضيف 0.20 م للخطافين فيصير 1.68 م.</li><li>هذا ليس طول قص حقيقيا: لم نطبق خصم الانحناء ولا أنصاف أقطار الثني ولا شكل التسليح في الكود. هذه تؤخذ من الكود وجداول التسليح.</li></ul>
+<h2>5. مساحة شدة الكمرة</h2>
+<p>(2 × العمق + العرض) × الطول = (1.20 + 0.30) × 6 = 9.0 م². جانبان وقاع، بلا أوجه نهاية ولا خصم لتقاطع البلاطة أو الأعمدة.</p>
+<h2>ما لا يغطيه الدرس</h2>
+<ul><li>حصر مشروع حقيقي من مخططات: لا يوجد هنا.</li><li>التقريب والهدر والوصلات والتراكب: مدخلات تأتي من المواصفات والكود، لم نقرأها.</li><li>نقاط الاختلاف بين اصطلاحات الحصر في المملكة: لم نتحقق منها.</li><li>أي سعر أو تكلفة: غير مشمول.</li></ul>
+<h2>تمرين</h2>
+<p>غيّر المثال: كمرة طولها 4.5 م وعرضها 0.25 م وعمقها 0.55 م. احسب الحجم ومساحة الشدة بيدك، ثم تحقق بالحاسبة. ثم اكتب جملة واحدة عن سبب اختلاف عدد الكانات حسب الاصطلاح.</p></main><footer>Saudi Engineering Academy &middot; Draft</footer></body></html>
