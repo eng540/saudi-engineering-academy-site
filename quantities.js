@@ -3,7 +3,7 @@
 // Units: lengths in metres (m) except bar diameter in millimetres (mm). Mass in kg, area in m2, volume in m3.
 // Rounding: results are rounded half away from zero to 4 decimals (mass: 3 decimals). Round only at display in real work.
 // Cover, hook allowance and lap lengths are INPUTS from the drawing notes or governing code clause; none is hard-coded.
-const STEEL_DENSITY = 7850; // kg/m3 reference value for reinforcing steel; confirm against the project specification.
+const STEEL_DENSITY = 7850; // kg/m3 ASSUMED illustrative density for steel (no source linked here); confirm against the project specification.
 
 function pos(name, v) {
   if (typeof v !== 'number' || !Number.isFinite(v) || v <= 0) throw new RangeError(name + ' must be a finite number > 0');
