@@ -1,0 +1,44 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>الدرس E11 (التنفيذ): البثور والالتواء في البلاطات | الأكاديمية السعودية للهندسة والإنشاءات</title>
+<style>
+:root{--navy:#10294a;--ink:#1d2733;--bg:#f6f7f9;--card:#fff;--line:#dde2e9;--accent:#c9731a;--muted:#5b6673}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic","Noto Sans Arabic",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;font-size:17px}
+header{background:var(--navy);color:#fff;padding:14px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+header a.brand{color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem}
+header .en{font-size:.8rem;opacity:.75;direction:ltr}
+nav.top{display:flex;gap:6px;flex-wrap:wrap;margin-inline-start:auto}
+nav.top a{color:#dfe8f5;text-decoration:none;padding:4px 10px;border-radius:6px;font-size:.9rem}
+nav.top a:hover,nav.top a.on{background:rgba(255,255,255,.14);color:#fff}
+main{max-width:920px;margin:0 auto;padding:22px 16px 60px}
+.banner{background:#fff4e5;border:1px solid #f0c78a;color:#6b3e07;border-radius:10px;padding:10px 14px;font-size:.92rem;margin-bottom:18px}
+h1{color:var(--navy);font-size:1.7rem;line-height:1.5}h2{color:var(--navy);margin-top:2rem;border-bottom:2px solid var(--line);padding-bottom:4px}h3{color:#27456f}
+.tw{overflow-x:auto;margin:14px 0}table{border-collapse:collapse;width:100%;background:var(--card);font-size:.93rem}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:start;vertical-align:top}th{background:#eaf0f8}
+code{background:#eef1f5;padding:1px 5px;border-radius:4px;direction:ltr;unicode-bidi:embed;font-size:.88em}
+pre{background:#14202e;color:#e8eef5;padding:14px;border-radius:10px;overflow-x:auto;font-size:.82rem;line-height:1.5;text-align:left}
+pre code{background:none;color:inherit;padding:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:14px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-decoration:none;color:inherit;display:block}
+.card:hover{border-color:var(--accent)}.card b{color:var(--navy)}.card span{display:block;color:var(--muted);font-size:.85rem}
+.badge{display:inline-block;font-size:.75rem;padding:1px 8px;border-radius:99px;background:#e9edf3;color:#334}
+.b-draft{background:#ffe9c9;color:#7a4300}.b-ok{background:#d9f2e0;color:#14532d}.b-un{background:#fde0e0;color:#7f1d1d}
+input{width:100%;font:inherit;padding:2px 4px;border:1px solid var(--line);border-radius:6px;direction:ltr}
+label.f{display:flex;flex-direction:column;gap:2px;min-width:9em;flex:1 1 9em}label.f span{font-size:.8rem;color:var(--muted);line-height:1.4}.fg{display:flex;flex-wrap:wrap;gap:10px}.out{margin-top:8px;font-weight:700;color:var(--navy)}.out.err{color:#9b1c1c}.warn{background:#fff4e5;border:1px solid #f0c78a;border-radius:10px;padding:10px 14px;font-size:.92rem;margin:10px 0}select{font:inherit;padding:3px;border:1px solid var(--line);border-radius:6px;max-width:100%}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:24px}
+@media (max-width:600px){.calc table,.calc tbody,.calc tr,.calc th,.calc td{display:block;width:100%}.calc th{border-bottom:0}label.f{flex:1 1 100%}body{font-size:16px}nav.top{margin-inline-start:0}}
+</style></head><body><header><a class="brand" href="index.html">الأكاديمية السعودية للهندسة والإنشاءات<div class="en">Saudi Engineering Academy</div></a>
+<nav class="top"><a href="docs.html">الوثائق</a><a href="sources.html">سجل المصادر</a><a href="calc.html">الحاسبة</a><a href="status.html">الحالة</a></nav></header><main>
+<div class="banner">مسودة تأسيسية قيد الإعداد. المحتوى لم يخضع بعد لمراجعة هندسية مستقلة، وليس اعتمادًا مهنيًا ولا ترخيصًا. لا تُستخدم أي قيمة هنا كمرجع تصميم أو تنفيذ.</div>
+<h1>الدرس E11 (هندسة التنفيذ): البثور والالتواء في البلاطات على التربة</h1>
+<ul><li>المصدران: نشرتا NRMCA رقم CIP 13 <code>Blisters on Concrete Slabs</code> (SRC-068) ورقم CIP 19 <code>Curling of Concrete Slabs</code> (SRC-069)، من الاتحاد الأمريكي للخرسانة الجاهزة. قرأنا نصيهما المستخرجين كاملين (نحو 8 آلاف حرف لكل منهما). الحقوق محفوظة، فنلخص بكلماتنا.</li><li>حدود الدرس: ممارسة أمريكية مبنية على ACI 302.1R وACI 360R. ليست نظاما ولا كودا سعوديا ولا شرطا في أي عقد. لم نقرأ ما يطلبه الكود السعودي أو مواصفات المشروع للتشطيب والفواصل، ولا نقول إنه غير موجود. الدرس بلا أرقام: لم ننقل أبعادا أو نسبا أو مسافات فواصل أو حدودا للهبوط أو الحرارة. وهو يكمل E6 وE9 وE10.</li><li>تاريخ القراءة: 26 نوفمبر 2026.</li></ul>
+<h2>أولا: البثور (blisters)</h2>
+<ul><li>ما هي: نتوءات منخفضة جوفاء على سطح البلاطة، يغطي كل منها قشرة كثيفة رقيقة من المونة فوق فراغ. تنتج غالبا من تشطيب مبكر أو متتال بالمالج، أو من تصلب سطح البلاطة أسرع من الخرسانة تحته. وقد لا تُرى في الإضاءة الضعيفة إلى أن تنكسر تحت الحركة. وهي أصغر من الانفصال (E10)، وإصلاحها بعد التصلب ليس سهلا.</li><li>لماذا تتكون: هواء محبوس أو ماء نز يصعد ويحتبس تحت سطح أُغلق بالتشطيب المبكر والمفرط. وتذكر النشرة عوامل منها: اهتزاز غير كاف أو مفرط، وأداة تسوية غير مناسبة أو سيئة الاستعمال، وظروف تبخر شديد تجعل السطح يبدو جاهزا، وقاعدة أبرد من الخرسانة والجو، وخرسانة مهواة، وبلاطة سميكة، وخلطة لزجة (محتوى إسمنتي أو رمل أو دقائق عالية)، وتطبيق مسحوق التقسية مبكرا خاصة على المهواة، وصب مباشر على عازل بخار أو قاعدة مشبعة.</li><li>ما توصي به: خلطة مناسبة للسطوح المصقولة، وتجانس الشك في الطقس البارد، وعدم إضافة ماء زائد قبل التفريغ، وعدم إجهاد السطح وهو لدن، وتجنب مسحوق التقسية على المهواة، وتجنب الصب مباشرة على عازل البخار أو قاعدة مشبعة، وحماية السطح من الجفاف السريع، وتجنب الدمك المفرط بالمسطرة الهزازة، وتعديل إجراءات التشطيب إن طلب المصقول على خرسانة مهواة بحيث يفلت الهواء والماء قبل التمليس. وأن يحذر المشطّب من سطح يبدو جاهزا أبكر من المعتاد، وأن يُبقي شفرات المالج مسطحة وأن يُحسب توقيت المعدات الآلية، وأن يكفي عدد الطاقم للمساحات الكبيرة. ظهور البثور بعد المرور الثاني أو الثالث يعني أن ميل الشفرات أكثر مما تحتمله الظروف.</li><li>ملاحظة: في نص النشرة تعارض ظاهر في فقرة اختيار المالج الخشبي أو المعدني بين الخرسانة المهواة وغير المهواة، فلم نأخذ منها حكما عن نوع الأداة.</li></ul>
+<h2>ثانيا: الالتواء (curling)</h2>
+<ul><li>ما هو: تقوس لوح البلاطة بارتفاع أطرافه وزواياه عند الفواصل أو الشقوق، أو بهبوطها، بسبب اختلاف الرطوبة أو الحرارة بين وجهيها. قد يترك جزءا بلا إسناد فتتشقق تحت أحمال تفوق قدرته، وقد تتقشر الحواف المرتفعة بحركة المرور. يظهر عادة مبكرا ويتناقص مع العمر حين يخف فرق الرطوبة والحرارة.</li><li>لماذا: انكماش الجفاف هو العامل الأساسي، ويزيد بزيادة ماء الخلط وحجم العجينة ونوع الركام. الالتواء الأعلى شائع في بلاطات الأرضيات الداخلية حيث يجف السطح العلوي وتبقى القاعدة رطبة. والالتواء الهابط أشيع في الخارجية بتأثير الحرارة.</li><li>أثر الإنشاء: نز زائد بسبب الماء الكثير أو رش الماء على السطح، ووضع البلاطة على عازل بخار أو طبقة طلاء علوية يزيد الاحتمال؛ والقاعدة الماصة تقلله. البلاطات الرقيقة والفواصل المتباعدة تزيد الالتواء، والأسمك يلتوي أقل. وفي الأرضيات الصناعية الفواصل المتقاربة غير مرغوبة، ويلزم توازن بين التشقق العشوائي والالتواء عند الفواصل.</li><li>ما يقلل الالتواء بحسب النشرة: أقل ماء خلط عملي (وهي تقول إن الهبوط لا علاقة له بالالتواء، أما ماء الخلط فنعم)، وأكبر مقاس ركام وأعلى محتوى ركام خشن عمليين، ومضافات خفض الانكماش، والانتباه لنوع الركام في خطة الفواصل، والحد من النز، وتجنب إسراف المواد الإسمنتية (فنسبة ماء إلى مواد منخفضة لا تقلل الانكماش إن كانت العجينة كبيرة، وارتفاع المقاومة لا يضمن انخفاض الالتواء)، وبلاطة أسمك، ومعالجة بعد الصب، وخطة فواصل مناسبة، وتسليح مصمم ومنفذ جيدا ونقل أحمال عبر الفواصل، ومواد إغلاق أو طلاء تتنفس. وللتطبيقات التي لا تتحمل الالتواء يمكن النظر قبل التنفيذ في أنظمة بديلة (خرسانة تعويض الانكماش أو سبق الإجهاد) وقد ترفع الكلفة.</li><li>المعالجة بعد الحدوث: قطع فواصل انكماش إضافية، وطحن الفواصل لإعادة صلاحية الاستعمال، وحقن مونة تحت اللوح لملء الفراغات واستعادة الإسناد.</li></ul>
+<h2>كيف نستعمله في التدريب</h2>
+<ul><li>يتدرب المتدرب على تمييز ثلاثة عيوب متقاربة: بثور وانفصال (E10) والتواء، وعلى أن يربط كل واحد بسبب مختلف: توقيت التمليس مقابل جفاف غير متجانس بين وجهي البلاطة.</li><li>وعلى الأسئلة: ما الأرضية؟ هل تحتمل التواء؟ ما خطة الفواصل في المخططات؟ ومن اعتمدها؟</li></ul>
+<h2>ما لم نتحقق منه</h2>
+<ul><li>ما يطلبه الكود السعودي ومواصفات المشاريع السعودية لتشطيب البلاطات وفواصلها: غير مقروء.</li><li>المراجع التي تحيل إليها النشرتان (ACI 302.1R وACI 360R وغيرهما): غير مقروءة.</li><li>أرقام النشرتين (أقطار، أبعاد، حدود الهبوط والحرارة، نسب الفواصل، أطوال التسليح): لم نستعملها ولا نعدها شروطا في أي مشروع.</li><li>ما تحتاجه البلاطة في مشروعك من تفاصيل فواصل وتسليح قرار للمصمم وفق الكود المعتمد، لا لهذا الدرس.</li></ul>
+<h2>تمرين</h2>
+<p>أرضية مستودع داخلية على عازل بخار ظهر فيها بعد أشهر ارتفاع في حواف الفواصل وتشقق قرب الزوايا. بثلاث نقاط: ما السبب الأرجح بحسب النشرة؟ وما الأسئلة التي تطرحها عن الخلطة والنز والمعالجة وخطة الفواصل؟ ومن تسأله عن قرار الإصلاح؟</p></main><footer>Saudi Engineering Academy &middot; Draft</footer></body></html>
